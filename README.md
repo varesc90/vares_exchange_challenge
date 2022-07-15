@@ -11,6 +11,9 @@ Description: This program will read the input file ("input.json" specifically) a
 
 3. run `mix run lib/match.es`
 
+## To run test
+
+`mix test`
 
 ## Expectation
 
