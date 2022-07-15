@@ -12,6 +12,8 @@ defmodule MATCH do
       :world
 
   """
+
+  # Read from file then do the matching process
   def match_engine_from_file() do
     {_status, file_content} = File.read("input.json")
     IO.inspect(match_engine(file_content))
@@ -19,12 +21,13 @@ defmodule MATCH do
     File.write("output.json",content)
   end
 
+
+  # Match Process from Json string
   def match_engine(json_string) do
-
-
     {_status, list} = JSON.decode(json_string)
     orders = list["orders"]
 
+    # Declare start Map
     output = %{
       :buy => [],
       :sell => [],
@@ -62,6 +65,7 @@ defmodule MATCH do
       }
     end)
   end
+
 
   def itelate_through_list_and_calculate(map) do
     if(length(map[:orders]) > 0) do
@@ -344,5 +348,6 @@ defmodule MATCH do
     end
   end
 end
+
 
 MATCH.match_engine_from_file()
