@@ -1,21 +1,23 @@
 # MATCH
 
-**TODO: Add description**
+Description: This program will read the input file ("input.json" specifically) and output the result of the match into output file (output.json)
 
-## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `match` to your list of dependencies in `mix.exs`:
+## How to run
 
-```elixir
-def deps do
-  [
-    {:match, "~> 0.1.0"}
-  ]
-end
-```
+1. Clone this repository
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/match>.
+2. run `mix deps.get` to install dependency
+
+3. run `mix run lib/match.es`
+
+
+## Expectation
+
+- output.json should be created under project directory
+
+## Note: 
+
+ - Sample of an input file has been added to the repository and should generate the output file on the same diretory as well
+ - input.json is specifically 
 
